@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Finnkino</title>
+    <!--font Trirong-->
+    <link href="https://fonts.googleapis.com/css?family=Trirong:wght@400;500&display=swap" rel="stylesheet">
+	<!--font awesome to get icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body> <!-- when page is loaded fetch Theaters from Finnkino -->
+  <header class="header">
+    <h1 id="texteanimate">movie theater Finnkino</h1>
+  </header>
+    <div class="currenttime">
+     <p id="currentdatetime"></p>   
+    </div>
+  <br/>
+  <br/>
+  
+	<div class="theatres-container">
+        <h2>choose a cinema where you will watch a movie</h2>	
+            <select id="theatres"></select>	<!-- select List to select theater and then fetch mvoies from this theater-->	
+            <form class="searchinput">
+		    <!-- input field to search movie -->
+            <input type="text" id="movieInput" name="movieInput" placeholder="Search movie...">
+			<button class="search-button" id="searchBtn">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+	</div>  
+    <!-- movie container where movies are fetched -->
+    <div class="movie-container" id="movie-container">
+        <ul class="movie-list">
+
+        </ul>
+    </div>
+	</div>
+ <script src="app.js"></script>
+ </body>
+
+</html>
