@@ -192,11 +192,10 @@ function searchMovie(event) {
                 item.style.display = "flex";
                 found = 1;
             } else {
-		        item.style.display = "none";
+		            item.style.display = "none";
             }
 	    	}
     });
-    //if (found === 0){ document.getElementById('movie-container').innerText = "No films found for search string: " + searchString;}
 }
 // function to replace not found images with predifined image
 function imgError(image) {
